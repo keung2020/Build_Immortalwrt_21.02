@@ -51,6 +51,5 @@ rm -rf feeds/packages/net/dns2tcp
 rm -rf feeds/packages/net/hysteria
 rm -rf feeds/packages/net/smartdns
 rm -rf feeds/packages/net/shadowsocks-rust
-rm -rf feeds/packages/net/frp
 rm -rf feeds/packages/net/mosdns
 ./scripts/feeds update -a
