@@ -21,3 +21,6 @@
 #git clone https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-passwall2
 #git clone https://github.com/1wrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+        rm -rf feeds/packages/net/frp
+        svn co https://github.com/immortalwrt/packages/tree/openwrt-23.05/net/frp feeds/packages/net/frp
+
