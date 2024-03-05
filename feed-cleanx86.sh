@@ -52,7 +52,6 @@ rm -rf feeds/packages/net/hysteria
 rm -rf feeds/packages/net/smartdns
 rm -rf feeds/packages/net/shadowsocks-rust
 rm -rf feeds/packages/net/mosdns
-rm -rf feeds/packages/net/frp
 
 function merge_package() {
     # 参数1是分支名,参数2是库地址,参数3是所有文件下载到指定路径。
@@ -78,6 +77,10 @@ function merge_package() {
     cd "$rootdir"
 }
 
+rm -rf feeds/packages/net/frp
 merge_package 23.05 https://github.com/immortalwrt/packages feeds/packages/net net/frp
 # svn co https://github.com/immortalwrt/packages/branches/openwrt-23.05/net/frp feeds/packages/net/frp
+rm -rf feeds/packages/lang/golang
+#git clone https://github.com/openwrt/packages/tree/openwrt-23.05/lang/golang feeds/packages/lang/golang
+merge_package 23.05 https://github.com/immortalwrt/packages feeds/packages/lang lang/golang
 ./scripts/feeds update -a
