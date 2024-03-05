@@ -92,13 +92,7 @@ jobs:
       env:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-
-    - name: Install golang
-      run: |
-        cd openwrt
-        rm -rf feeds/packages/lang/golang
-        git clone https://github.com/openwrt/packages/tree/openwrt-23.05/lang/golang feeds/packages/lang/golang
-        
+       
     - name: Download package
       id: package
       run: |
