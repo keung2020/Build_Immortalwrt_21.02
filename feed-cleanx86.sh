@@ -78,5 +78,5 @@ rm -rf feeds/packages/net/mosdns
 # svn co https://github.com/immortalwrt/packages/branches/openwrt-23.05/net/frp feeds/packages/net/frp
 rm -rf feeds/packages/lang/golang
 # git clone https://github.com/openwrt/packages/tree/openwrt-23.05/lang/golang feeds/packages/lang/golang
-merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages lang/golang
+merge_package openwrt-23.05 https://github.com/immortalwrt/packages/lang feeds/packages lang/golang
 ./scripts/feeds update -a
