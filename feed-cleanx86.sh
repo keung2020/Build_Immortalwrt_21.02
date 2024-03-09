@@ -73,6 +73,8 @@ rm -rf feeds/packages/net/hysteria
 rm -rf feeds/packages/net/smartdns
 rm -rf feeds/packages/net/shadowsocks-rust
 rm -rf feeds/packages/net/mosdns
+rm -rf feeds/luci/applications/luci-app-adbyby-plus
+merge_package openwrt-23.05 https://github.com/immortalwrt/luci feeds/luci/applications /applications/luci-app-adbyby-plus
 rm -rf feeds/packages/net/frp
 merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/net net/frp
 # svn co https://github.com/immortalwrt/packages/branches/openwrt-23.05/net/frp feeds/packages/net/frp
