@@ -25,7 +25,7 @@ function merge_package() {
 }
 #Delete duplicate file
 rm -rf feeds/luci/applications/luci-app-aliddns
-rm -rf feeds/luci/applications/luci-app-autoreboot
+#rm -rf feeds/luci/applications/luci-app-autoreboot
 rm -rf feeds/luci/applications/luci-app-baidupcs-web
 rm -rf feeds/luci/applications/luci-app-beardropper
 rm -rf feeds/luci/applications/luci-app-dockerman
