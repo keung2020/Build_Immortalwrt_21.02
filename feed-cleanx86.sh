@@ -25,7 +25,6 @@ function merge_package() {
 }
 #Delete duplicate file
 rm -rf feeds/luci/applications/luci-app-aliddns
-#rm -rf feeds/luci/applications/luci-app-autoreboot
 rm -rf feeds/luci/applications/luci-app-baidupcs-web
 rm -rf feeds/luci/applications/luci-app-beardropper
 rm -rf feeds/luci/applications/luci-app-dockerman
@@ -73,10 +72,8 @@ rm -rf feeds/packages/net/hysteria
 rm -rf feeds/packages/net/smartdns
 #rm -rf feeds/packages/net/shadowsocks-rust
 rm -rf feeds/packages/net/mosdns
-rm -rf feeds/packages/net/frp
-merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/net net/frp
-# svn co https://github.com/immortalwrt/packages/branches/openwrt-23.05/net/frp feeds/packages/net/frp
-rm -rf feeds/packages/lang/golang
-# git clone https://github.com/openwrt/packages/tree/openwrt-23.05/lang/golang feeds/packages/lang/golang
-merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/lang lang/golang
+#rm -rf feeds/packages/net/frp
+#merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/net net/frp
+#rm -rf feeds/packages/lang/golang
+#merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/lang lang/golang
 ./scripts/feeds update -a
