@@ -62,8 +62,8 @@ rm -rf feeds/luci/applications/luci-app-xlnetacc
 rm -rf feeds/luci/applications/luci-app-xunlei
 rm -rf feeds/luci/applications/luci-theme-argon
 rm -rf feeds/packages/net/naiveproxy
-#rm -rf feeds/packages/net/xray-core
-#rm -rf feeds/packages/net/xray-plugin
+rm -rf feeds/packages/net/xray-core
+rm -rf feeds/packages/net/xray-plugin
 rm -rf feeds/packages/net/brook
 rm -rf feeds/packages/net/chinadns-ng
 rm -rf feeds/packages/net/dns2socks
@@ -75,6 +75,7 @@ rm -rf feeds/packages/net/smartdns
 rm -rf feeds/smpackage/mosdns
 #rm -rf feeds/packages/net/frp
 #merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/net net/frp
-#rm -rf feeds/packages/lang/golang
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
 #merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/lang lang/golang
 ./scripts/feeds update -a
