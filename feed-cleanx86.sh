@@ -73,8 +73,8 @@ rm -rf feeds/packages/net/smartdns
 #rm -rf feeds/packages/net/shadowsocks-rust
 #rm -rf feeds/packages/net/mosdns
 rm -rf feeds/smpackage/mosdns
-#rm -rf feeds/packages/net/frp
-#merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/net net/frp
+rm -rf feeds/packages/net/frp
+merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/net net/frp
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
 #merge_package openwrt-23.05 https://github.com/immortalwrt/packages feeds/packages/lang lang/golang
