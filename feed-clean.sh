@@ -64,8 +64,11 @@ rm -rf feeds/luci/applications/luci-app-wrtbwmon
 rm -rf feeds/luci/applications/luci-app-xlnetacc
 rm -rf feeds/luci/applications/luci-app-xunlei
 rm -rf feeds/luci/applications/luci-theme-argon
-#rm -rf feeds/packages/net/naiveproxy
+rm -rf feeds/packages/net/naiveproxy
+rm -rf feeds/smpackage/xray-core
 #rm -rf feeds/packages/net/xray-core
+rm -rf feeds/smpackage/xray-plugin
+rm -rf feeds/smpackage/sing-box
 #rm -rf feeds/packages/net/xray-plugin
 rm -rf feeds/packages/net/brook
 rm -rf feeds/packages/net/chinadns-ng
