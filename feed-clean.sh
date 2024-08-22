@@ -69,11 +69,12 @@ rm -rf feeds/smpackage/xray-core
 #rm -rf feeds/packages/net/xray-core
 rm -rf feeds/smpackage/xray-plugin
 rm -rf feeds/smpackage/sing-box
+rm -rf /feeds/smpackage/dns2tcp
 #rm -rf feeds/packages/net/xray-plugin
 rm -rf feeds/packages/net/brook
 rm -rf feeds/packages/net/chinadns-ng
 rm -rf feeds/packages/net/dns2socks
-rm -rf feeds/packages/net/dns2tcp
+#rm -rf feeds/packages/net/dns2tcp
 rm -rf feeds/packages/net/hysteria
 rm -rf feeds/packages/net/smartdns
 rm -rf feeds/packages/net/shadowsocks-rust
